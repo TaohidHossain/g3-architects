@@ -12,11 +12,38 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
-/* start header styles */
+button{
+    background-color: var(--orange);
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.gray{
+    color: var(--dark2);
+}
+.orange{
+    color: var(--orange);
+}
+.dark1{
+    color: var(--dark1);
+}
+/* common styles */
+h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark1);
+}
+p{
+    color: var(--gray);
+}
+/* start of header section styles */
 header{
-    /* width: 100%; */
     background-color: rgba(255,144,14,0.1);
 }
+    /* start of nav section styles */
 nav{
     width:80%;
     margin: 0 auto;
@@ -40,6 +67,8 @@ li{
     font-size: 16px;
     font-weight: 500;
 }
+    /* end of nav section styles */
+    /* start of hero section styles */
 .hero{
     width:80%;
     margin: 0 auto;
@@ -54,18 +83,53 @@ li{
 }
 .hero p{
     margin-bottom: 20px;
-    color: var(--gray);
-}
-.hero button{
-    background-color: var(--orange);
-    color: #fff;
-    border: 0;
-    border-radius: 8px;
-    padding: 16px 24px;
-    margin-bottom: 20px;
-    font-weight: 600;
 }
 .hero img{
     width: 100%;
     display: block;
+}
+    /* end of hero section styles */
+/* end of header section styles */
+/* start of main section styles */
+main{
+    width: 80%;
+    margin: 0 auto;
+    padding: 35px;
+}
+    /* start of quick-list section styles */
+.quick-list{
+    display: flex;
+}
+.quick-list .box{
+    width: 50%;
+    padding: 30px;
+}
+.quick-list .box:first-child{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.quick-list .box img{
+    width: 100%;
+}
+.quick-list .box:last-child{
+    margin: auto 0;
+}
+.box h2{
+    margin-block-end: 20px;
+}
+.box p{
+    margin-block-end: 20px;
+}
+    /* end of quick-list section styles */
+    /* start of features section styles */
+.features{
+    display: flex;
+}
+.features .box{
+    width: 50%;
+}
+.features h2{
+    border-left: 4px solid var(--orange);
+    padding-inline-start: 16px;
 }
