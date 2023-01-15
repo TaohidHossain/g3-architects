@@ -159,7 +159,7 @@ main{
     font-weight: 500;
     position: relative;
     left: -100px;
-    bottom: 100px;
+    bottom: 50%;
 }
 .big{
     font-size: 36px;
@@ -236,3 +236,61 @@ footer h2{
     background-color: rgba(255,144,14,0.1);
 }
 /* end of footer section styles */
+
+/* responsive styles for small decices */
+@media screen and (max-width: 576px) {
+    header,main,footer{
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .nav-items ul{
+        flex-direction: column;
+    }
+    .quick-list{
+        flex-direction: column;
+    }
+    .quick-list .box{
+        width: 100%;
+    }
+    /* .quick-list .box:first-child{
+
+    } */
+    .features{
+        flex-direction: column;
+    }
+    .features .box{
+        width: 100%;
+    }
+    .features .box img{
+        padding-block-start: 20px;
+    }
+    .big-btn{
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 180px;
+    }
+    .facts{
+        position: relative;
+        top: -120px;
+    }
+    .facts-des{
+        width: 100%;
+    }
+    .sm-boxes{
+        flex-wrap: wrap;
+    }
+    .sm-box{
+        width: 40%;
+        margin-block-end: 30px;
+    }
+    .sponsor{
+        width: 100%;
+    }
+    footer{
+        padding: 30px;
+        position: relative;
+        top: -150px;
+    }
+}
