@@ -36,6 +36,11 @@ h2{
     font-weight: 700;
     color: var(--dark1);
 }
+h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark1);
+}
 p{
     color: var(--gray);
 }
@@ -118,13 +123,14 @@ main{
 .box h2{
     margin-block-end: 20px;
 }
-.box p{
+.quick-list .box p{
     margin-block-end: 20px;
 }
     /* end of quick-list section styles */
     /* start of features section styles */
 .features{
     display: flex;
+    column-gap: 8%;
 }
 .features .box{
     width: 50%;
@@ -133,3 +139,62 @@ main{
     border-left: 4px solid var(--orange);
     padding-inline-start: 16px;
 }
+.card{
+    width: 95%;
+    padding: 20px 30px;
+    box-shadow: 0 0 3px var(--dark2);
+    margin-block-start: 20px;
+}
+.features .box img{
+    width: 100%;
+}
+.big-btn{
+    padding: 45px 40px;
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    left: -100px;
+    bottom: 100px;
+}
+.big{
+    font-size: 36px;
+    font-weight: 700;
+}
+    /* end of features section styles */
+    /* start of facts section styles */
+.facts-des{
+    width: 40%;
+    margin-block: 20px;
+}
+.sm-boxes{
+    display: flex;
+    justify-content: space-around;
+}
+.sm-box{
+    border: 1px solid var(--orange);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 18px;
+    width: 18%;
+}
+.sm-box img{
+    width: 24px;
+    height: 24px;
+}
+.sm-box p{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-block: 20px;
+}
+.sm-box p:last-child{
+    font-size: 14px;
+    margin-block-start: 0;
+}
+    /* end of facts section styles */
+/* end of facts section styles */
+/* start of footer section styles */
+
+/* end of footer section styles */
